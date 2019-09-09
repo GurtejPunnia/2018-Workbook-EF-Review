@@ -10,10 +10,19 @@ namespace WestWindConsole.DAL
 {
     public class WestWindContext : DbContext
     {
+        //My database context class is a :virtual representation"
+        //of the database, with each DbSet<T> property referencing
+        // 
         public WestWindContext() : base("name=WWdb")
         {
             // TODO: Demonstrate null database initializer
+            // tells entity framework that it should not create any tables
+            // in the database on my behalf.
+            // (null == no initializer)
+            // This is an example of disabling database
             Database.SetInitializer<WestWindContext>(null);
+            //An alternative to this woild be to disable database 
+            // initialization in the .config file.
         }
 
         public DbSet<Product> Products { get; set; }

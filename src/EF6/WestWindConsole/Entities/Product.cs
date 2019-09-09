@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace WestWindConsole.Entities
 {
-    // TODO: Begin reviewing entity attributes
+    //  TODO: Begin reviewing entity attributes
     [Table("Products")]
     public class Product
     {
