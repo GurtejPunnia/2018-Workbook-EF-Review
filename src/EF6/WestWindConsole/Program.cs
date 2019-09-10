@@ -49,6 +49,9 @@ namespace WestWindConsole
                         DisplayShippers();
                         break;
                     // TODO: Practice - Display methods for remaining tables
+                    case 9:
+                        DisplayShippers();
+                        break;
                 }
                 Pause();
             } while (menuChoice > 0 && menuChoice <= 15);
